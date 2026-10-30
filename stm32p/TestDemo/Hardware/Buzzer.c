@@ -3,7 +3,7 @@
 void Buzzer_Init(void)
 {
 	GPIO_InitTypeDef GPIO_InitStructrue;
-	GPIO_InitStructrue.GPIO_Mode=GPIO_Mode_IPU;
+	GPIO_InitStructrue.GPIO_Mode=GPIO_Mode_Out_PP;
 	GPIO_InitStructrue.GPIO_Pin=GPIO_Pin_12;
 	GPIO_InitStructrue.GPIO_Speed=GPIO_Speed_50MHz;
 	

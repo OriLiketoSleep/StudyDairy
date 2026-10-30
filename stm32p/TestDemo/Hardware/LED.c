@@ -44,3 +44,75 @@ void LED(unsigned int Location,unsigned char Enable)
 		}
 	}
 }
+
+void LED_Turn(unsigned int Location)
+{
+	
+	switch(Location)
+	{
+		case 1:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_0)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_0);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_0);
+	}break;
+		case 2:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_1)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_1);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_1);
+	};break;
+		case 3:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_2)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_2);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_2);
+	}break;
+		case 4:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_3)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_3);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_3);
+	}break;
+		case 5:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_4)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_4);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_4);
+	}break;
+		case 6:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_5)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_5);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_5);
+	}break;
+		case 7:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_6)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_6);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_6);
+	}break;
+		case 8:if(GPIO_ReadOutputDataBit(GPIOA,GPIO_Pin_7)==0)
+	{
+		GPIO_SetBits(GPIOA,GPIO_Pin_7);
+	}
+	else
+	{
+		GPIO_ResetBits(GPIOA,GPIO_Pin_7);
+	};break;
+	}
+}
