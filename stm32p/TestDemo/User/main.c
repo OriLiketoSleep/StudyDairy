@@ -3,28 +3,21 @@
 #include "Delay.h"
 #include "Key.h"
 #include "Buzzer.h"
+#include "Lightsensor.h"
 
-int keynum;
+uint8_t light;
 
 int main()
 {
-	Key_Init();
-	LED_Init();
+	Buzzer_Init();
+	Light_Init();
 	while(1)
 	{
-		keynum=Keyscan();
-		if(keynum==1)
-		{
-			LED_Turn(2);
-//			LED(2,1);
-//			LED(3,0);
-		}
-		else if(keynum==2)
-		{
-			LED_Turn(3);
-//			LED(2,0);
-//			LED(3,1);
-		}
+		light=Light_read();
+		if(light==1)
+			Buzzer(1);
+		if(light==2)
+			Buzzer(0);
 		
 	}
 }

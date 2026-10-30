@@ -12,9 +12,9 @@ void Key_Init(void)
 	GPIO_Init(GPIOB,&GPIO_InitStructrue);
 }
 
-int Keyscan(void)
+uint8_t Keyscan(void)
 {
-	int keynum=0;
+	uint8_t keynum=0;
 	if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_1)==0)
 	{
 		Delay_ms(20);

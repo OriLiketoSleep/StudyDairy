@@ -695,6 +695,16 @@
               <FileType>5</FileType>
               <FilePath>.\Hardware\Key.h</FilePath>
             </File>
+            <File>
+              <FileName>Lightsensor.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Hardware\Lightsensor.c</FilePath>
+            </File>
+            <File>
+              <FileName>Lightsensor.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Hardware\Lightsensor.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

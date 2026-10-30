@@ -2,6 +2,6 @@
 #define __KEY_H
 
 void Key_Init(void);
-int Keyscan(void);
+uint8_t Keyscan(void);
 
 #endif
