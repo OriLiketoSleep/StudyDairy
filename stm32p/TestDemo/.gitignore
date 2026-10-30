@@ -1,0 +1,25 @@
+# Keil MDK 编译产物
+Objects/
+Listings/
+DebugConfig/
+*.hex
+*.bin
+*.axf
+*.o
+*.d
+*.crf
+*.dep
+*.lnp
+*.lst
+*.map
+EventRecorderStub.scvd
+JLinkLog.txt
+
+# Keil 窗口布局（每台机器不同）
+*.uvguix.*
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
